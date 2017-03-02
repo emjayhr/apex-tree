@@ -1,6 +1,6 @@
 {
   "name" : "ApexTree",
-  "version" : "1.0",
+  "version" : "1.0.0",
   "description" : "Plugin for displaying tree data",
   "keywords" : ["tree"],
   "homepage" : "https://github.com/emjayhr/apex-tree",
