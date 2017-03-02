@@ -1,0 +1,166 @@
+/*#P135_TTA_ID {margin-left:28px}*/
+.buttons {padding-top:36px;text-align:right}
+#btnSpremiIznimke {margin-top:24px}
+.hijerarhija .node-type {float:right;font-size:12px;color:#999;text-align:right}
+
+.hijerarhija div.content {
+display:block;
+}
+.hijerarhija span.toggler {
+cursor: pointer;font-size: 24px;
+left: 0;
+padding-top: 8px;
+position: absolute;
+z-index: 1;
+color:#999;
+ -webkit-transition: color 0.3s; /* Safari */
+    transition: color 0.3s;
+}
+.hijerarhija li.expanded > span.toggler  {
+left:-5px;
+}
+.hijerarhija span.toggler:hover {
+color:#333
+}
+
+.hijerarhija ul {
+	margin-top:0;
+	margin-bottom:0;
+	margin-right:0;
+}
+.hijerarhija li {
+    margin: 0;
+	list-style-type: none;
+    position: relative;
+	padding: 4px 0px 0px 5px;
+}
+
+.hijerarhija h6 {
+	font-size:1.3rem;
+	margin:0;
+}
+.hijerarhija li::before{
+    content: '';
+	position: absolute; 
+    top: 0;
+	width: 1px; 
+    height: 100%;
+	right: auto; 
+    left: -20px;
+	border-left: 1px solid #ccc;
+    bottom: 50px;
+}
+.hijerarhija li::after{
+    content: '';
+	position: absolute; 
+    top: 22px; 
+	width: 25px; 
+    height: 20px;
+	right: auto; 
+    left: -20px;
+	border-top: 1px solid #ccc;
+}
+
+.hijerarhija ul.toggler li::after {
+	width:35px;
+}
+.hijerarhija ul.toggler li.toggler::after {
+	width:24px;
+}
+.hijerarhija ul.toggler div.node {
+	margin-left:10px;
+}
+.hijerarhija li.selected > div.node> div.body {
+	background:rgba(0,0,0,0.1);
+}
+
+.hijerarhija li a:focus{
+	outline: 0;
+}
+.hijerarhija li div.body{
+	padding: 8px 10px ;
+	
+	}
+
+.hijerarhija li div.node{
+    display: inline-block;
+	/*padding: 8px 0px 0px 10px;*/
+	text-decoration: none;
+	color: #666;
+	border:1px solid #ddd;
+    border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	width:100%;
+	background-color:rgba(200,228,248,0.1);
+	 -webkit-transition: border-color 0.3s; /* Safari */
+    transition: border-color 0.3s;
+	-webkit-transition: background-color 0.3s; /* Safari */
+    transition: background-color 0.3s;
+}
+
+/*Remove connectors before root*/
+.hijerarhija > ul > li::before, .hijerarhija > ul > li::after{
+	border: 0;
+}
+/*Remove connectors after last child*/
+.hijerarhija li:last-child::before{ 
+      height: 22px;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.hijerarhija li div.node:hover, .hijerarhija li div.node:hover+ul li div.node {
+	/*background: #c8e4f8;*/ color: #222; border: 1px solid #bbb;
+}
+/*Connector styles on hover*/
+.hijerarhija li div.node:hover+ul li::after, 
+.hijerarhija li div.node:hover+ul li::before, 
+.hijerarhija li div.node:hover+ul::before, 
+.hijerarhija li div.node:hover+ul ul::before{
+	border-color:  #bbb;
+}
+
+
+.hijerarhija ul.search-mode li {
+padding:0;
+}
+.hijerarhija ul.search-mode li div.node {
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+
+border-color: -moz-use-text-color -moz-use-text-color #ccc;
+border-image: none;
+border-radius: 0;
+border-style: none none dashed;
+border-width: medium medium 1px;
+margin-left: 0;
+padding-left:15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.hijerarhija li.position > div.node {background-color:rgba(195,234,187,0.3) }/*rgba(255, 178, 174, 0.1)}*/
+.hijerarhija li.position.poz-iznimka > div.node {background-color:rgba(255, 178, 174, 0.1)}
+.hijerarhija li.highlight > div.node {background-color:#fdfd96}
+.hijerarhija div.desc p {font-size:12px;margin:0;}
+.hijerarhija div.desc {margin-top:8px}
+
+.hijerarhija div.footer {border-top: 1px dashed #ddd;padding:2px 8px;}
+
+.hijerarhija div.footer a {float:left;font-size:12px;padding:0 5px;border-left:1px solid #ccc  }
+.hijerarhija div.footer a:first-child {padding-left:0;border-left:0}
+.hijerarhija div.footer a i {font-size:1.2em}
+.hijerarhija span.error {color:darkred;font-size:12px;float:right}
+
+.hijerarhija .search-mode div.node {cursor:pointer}
+.hijerarhija .clickable div.body, .hijerarhija .selectable div.body, .hijerarhija li:not(.leaf) > div.node > div.body {cursor:pointer}
+.hijerarhija {margin-right:20px}
+.hijerarhija li.demo-class> div.node {background-color:rgba(195,234,187,0.3) }
+.hijerarhija span.toggler i {font-size:24px}
+.hijerarhija span.toggler i {left:-5px}
