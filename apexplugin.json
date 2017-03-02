@@ -27,7 +27,7 @@
         "internalName" : "HR.BILOG.APEXTREE",
         "type" : "region",
         "demo" : "https://apex.oracle.com/pls/apex/f?p=112993:1:",
-        "previewImage" : "https://github.com/emjayhr/apex-tree/blob/master/preview.png"
+        "previewImage" : "https://raw.githubusercontent.com/emjayhr/apex-tree/master/preview.png"
       }
     }
   }
